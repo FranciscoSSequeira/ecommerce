@@ -1,0 +1,14 @@
+#test unitarios creados 
+-auth.controller.spec.ts: testea si se puede registrar un nuevo tu_usuario.
+-products.service.spec.ts: testea si en la busqueda de un producto por ID se trae un producto.
+-products.service.spec.ts: testea cuando en la busqueda de un producto por ID, el producto no se encuentra y lanza la excepcion de producto no encontrado.
+- users.service.spec.ts : testea si esta definido, si se remueve un usuario y retorna la info sin password y contraseña, y sin isAdmin. Tambien testea si al buscar el usuario, este no se encuentra.
+-auth.service.spec.ts: testea si retorna un token para credentials validas.
+#test de integracion creados:
+-auth/signin (POST) should authenticate the user and return a token: testea si crea el usuario y si retorna el token.
+-/products (GET) - lista de productoss: testea si devuelve la lista de usuarios.
+-/products/:id (GET) - detalle de producto: testea si devuelve el producto por id.
+-/products/seeder (GET) - agrega productos de prueba: testea si agrega los productos de prueba.
+-/categories/seeder (GET) - agrega categorías de prueba: testea si agrega las categorías de prueba.
+
+
