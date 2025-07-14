@@ -3,7 +3,7 @@ name: deploy
 on:
   push:
     branches:
-      -"main"
+      - "main"
 
 jobs: 
   build:
@@ -28,4 +28,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/ecommerce-makloster-app:latest
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/ecommerce-makloster-app:latests
