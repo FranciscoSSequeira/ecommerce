@@ -2,6 +2,8 @@ version: '3.8'
 services:
   db:
     image: postgres:15
+    #fijarse si quedo bien
+    # image: fran2909/ecommerce-makloster-app 
     restart: always
     environment:
       POSTGRES_USER: postgres
@@ -15,7 +17,8 @@ services:
       - pgdata:/var/lib/postgresql/data
 
   app:
-    build: .
+    # build: .
+    image: fran2909/ecommerce-makloster-app:latest
     depends_on:
       - db
     environment:
